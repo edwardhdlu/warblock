@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+    	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    </head>
+    
+    <body>
+    	<div id="header">
+    		<title>WarBlock</title>
+    		<div id="logo">WAR<b>BLOCK</b></div>
+
+            <div id="menu">
+                <% if (locals.user) { %>
+                    <strong>Signed in as: </strong><%= user.username %> 
+                    <a href="/update" class="btn btn-default"><span class="fa fa-user"></span>Profile</a>
+                    <a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>Logout</a>
+                <% } else { %>
+                <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Login</a>
+                <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Signup</a>
+                <% } %>
+            </div>
+    	</div>
+
+        <canvas id="canvas" style="width: 800px; height: 400px">
+        	YOUR BROWSER DOESN'T SUPPORT HTML5 CANVAS
+        </canvas>
+
+        <script src="javascript/script.js"></script>
+        <script>
+            var draw = new DrawInstance(document.getElementById('canvas'));
+        </script>
+
+        <div id="console">
+        	<textarea readonly id="log"></textarea>
+        	<input type="text" id="input">
+                <div id="arrow">></div>
+            </input>
+        </div>
+    
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="javascript/jquery-1.12.1.min.js"></script>
+    
+        <script>
+            var socket = io();
+            
+            $('#input').keypress(function(e) {
+                if (e.which == 13) { //Enter
+                    var value = $('#input').val();
+                    document.getElementById('log').value += "> " + value + "\n";
+                    $('#log').scrollTop($('#log')[0].scrollHeight);
+                    $('#input').val("");
+                    socket.emit('command', value);
+                }
+            });
+            
+            socket.on('game init', function(map){
+                draw.init(map);
+                console.log("turn: " + map.yourTurn);
+                document.getElementById("log").value += "> " + "Matchmaking complete, new game starting!\n";
+                if(map.yourTurn) document.getElementById("log").value += ("> " + "It's your turn, enter a command.\n");
+                else document.getElementById("log").value += ("> " + "Please wait, your opponent is selecting a move...\n");
+                
+                $('#log').scrollTop($('#log')[0].scrollHeight);
+            });
+            
+            socket.on('opponent disconnected', function(res){
+                document.getElementById('log').value += "> " + "Your opponent has disconnected! You win!!" + "\n";
+                $('#log').scrollTop($('#log')[0].scrollHeight);
+            });
+            
+            socket.on('move', function(moveObject){
+                console.log("Move successful");
+                console.log(moveObject);
+                draw.init(moveObject.map.map);
+                var whosTurn = moveObject.map.map.yourTurn;
+                console.log("WHOSTURN: " + whosTurn);
+                draw.command(moveObject.move, (whosTurn==1)?2:1);
+            });
+            
+            socket.on('consoleerror', function(error){
+                document.getElementById('log').value += "> " + "ERROR: " + error + "\n";
+                $('#log').scrollTop($('#log')[0].scrollHeight);
+            });
+            
+            socket.on('consolemsg', function(msg){
+                document.getElementById('log').value += "> " + msg + "\n";
+                $('#log').scrollTop($('#log')[0].scrollHeight);
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Gotham Light";
+  src: url(../assets/fonts/GOTHAM-LIGHT.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url(../assets/fonts/GOTHAM-BOOK.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url(../assets/fonts/GOTHAM-MEDIUM.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url(../assets/fonts/GOTHAM-BOLD.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Black";
+  src: url(../assets/fonts/GOTHAM-BLACK.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+body {
+	background-color: #e2e2e2;
+	font-family: "Gotham Medium";
+	margin: 0;
+}
+
+canvas {
+	margin: 0 auto;
+	display: block;
+	border: 4px solid #2f2f2f;
+	background-color: #d0d0d0;
+	box-sizing: border-box;
+}
+
+#header {
+	box-sizing: border-box;
+	background-color: #02a8f4;
+	border-bottom: 10px solid #0192d5;
+	margin-bottom: 20px;
+}
+
+#logo {
+	font-family: "Gotham Light";
+	font-size: 24px;
+	letter-spacing: 2px;
+	padding: 18px;
+	margin: 0 auto;
+	width: 200px;
+	color: #e2e2e2;
+	text-align: center;
+}
+
+#logo b {
+	font-family: "Gotham Bold";
+}
+
+#console {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+#input {
+	width: 100%;
+	background-color: #2f2f2f;
+	padding-right: 15px;
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #e2e2e2;
+	font-size: 18px;
+	outline: none;
+	font-family: "Gotham Light";
+	line-height: 150%;
+	border: 0;
+}
+
+#log {
+	resize: none;
+	width: 100%;
+	background-color: #2f2f2f;
+	outline: none;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 0;
+	height: 100px;
+	border-bottom: 1px solid #e2e2e2;
+	color: #e2e2e2;
+	font-size: 18px;
+	font-family: "Gotham Light";
+	line-height: 150%;
+}
+
+#arrow {
+	margin-top: -30px;
+	margin-left: 15px;
+	color: #e2e2e2;
+	font-size: 18px;
+	font-family: "Gotham Light";
+
+}
+
+#menu {
+	float: right;
+	margin-top: -35px;
+
+}
+
+#menu a {
+	color: #e2e2e2;
+	font-family: "Gotham Light";
+	font-size: 16px;
+	text-decoration: none;
+	padding: 10px;
+}
