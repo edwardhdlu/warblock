@@ -4,7 +4,11 @@ var bcrypt   = require('bcrypt-nodejs');
 
 // define the schema for our user model
 var UserSchema = mongoose.Schema({
-	username		 : { type: String, unique: true, maxlength: [15, 'Cannot exceed 15 characters.'] },
+	username		 : { type: String, 
+		                 unique: true,
+		                 minlength: [3, 'Username must be at least 3 characters.'],
+		                 maxlength: [15, 'Username cannot exceed 15 characters.']
+		               },
 	uid				 : Number,
 	
     local            : {
@@ -16,7 +20,7 @@ var UserSchema = mongoose.Schema({
 
 // SCHEMA TO HOLD AUTO INCREMENTING COUNT
 var CounterSchema = mongoose.Schema({
-    _id: {type: String, required: true},
+    _id: { type: String, required: true },
     seq: { type: Number, default: 1 }
 });
 var counter = mongoose.model('counter', CounterSchema);
@@ -36,6 +40,7 @@ UserSchema.pre('save', function(next) {
 	    });
 	}
 });
+
 
 // methods ======================
 // generating a hash

@@ -1,0 +1,865 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongoose-unique-validator' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /Users/Edward/Desktop/warblock-master/package.json
+5 warn package.json TankGame@0.0.1 No repository field.
+6 warn package.json TankGame@0.0.1 No README data
+7 warn package.json TankGame@0.0.1 No license field.
+8 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/bcrypt-nodejs/package.json
+9 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/body-parser/package.json
+10 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/clone/package.json
+11 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/connect-flash/package.json
+12 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/cookie-parser/package.json
+13 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/ejs/package.json
+14 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/express-session/package.json
+16 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/install/package.json
+17 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/method-override/package.json
+18 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/mongodb/package.json
+19 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/mongojs/package.json
+20 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/mongoose/package.json
+21 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-auto-increment/package.json
+22 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/morgan/package.json
+23 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/npm/package.json
+24 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/passport/package.json
+25 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-facebook/package.json
+26 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-google-oauth/package.json
+27 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-local/package.json
+28 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-twitter/package.json
+29 verbose installManyTop reading scoped package data from /Users/Edward/Desktop/warblock-master/node_modules/socket.io/package.json
+30 info package.json bcrypt-nodejs@0.0.3 No license field.
+31 info package.json connect-flash@0.1.1 No license field.
+32 info package.json ejs@0.8.8 No license field.
+33 info package.json cookie-parser@1.0.1 No license field.
+34 info package.json mongoose@3.8.39 No license field.
+35 info package.json mongoose-auto-increment@5.0.1 No license field.
+36 info package.json passport-facebook@1.0.3 No license field.
+37 info package.json passport-google-oauth@0.1.5 No license field.
+38 info package.json passport@0.1.18 No license field.
+39 info package.json passport-local@0.1.6 No license field.
+40 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/package.json
+41 silly cache add args [ 'mongoose-unique-validator', null ]
+42 verbose cache add spec mongoose-unique-validator
+43 silly cache add parsed spec Result {
+43 silly cache add   raw: 'mongoose-unique-validator',
+43 silly cache add   scope: null,
+43 silly cache add   name: 'mongoose-unique-validator',
+43 silly cache add   rawSpec: '',
+43 silly cache add   spec: 'latest',
+43 silly cache add   type: 'tag' }
+44 silly addNamed mongoose-unique-validator@latest
+45 verbose addNamed "latest" is being treated as a dist-tag for mongoose-unique-validator
+46 info addNameTag [ 'mongoose-unique-validator', 'latest' ]
+47 silly mapToRegistry name mongoose-unique-validator
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/mongoose-unique-validator
+51 verbose addNameTag registry:https://registry.npmjs.org/mongoose-unique-validator not in flight; fetching
+52 verbose request uri https://registry.npmjs.org/mongoose-unique-validator
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 2:59:39 PM
+55 verbose request id 39d86856f3390dcb
+56 http request GET https://registry.npmjs.org/mongoose-unique-validator
+57 http 200 https://registry.npmjs.org/mongoose-unique-validator
+58 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+58 verbose headers   etag: '"41HJT57Z8DFTKEDIQG7PLXN78"',
+58 verbose headers   'content-type': 'application/json',
+58 verbose headers   'cache-control': 'max-age=300',
+58 verbose headers   'content-length': '25392',
+58 verbose headers   'accept-ranges': 'bytes',
+58 verbose headers   date: 'Wed, 23 Mar 2016 18:59:41 GMT',
+58 verbose headers   via: '1.1 varnish',
+58 verbose headers   age: '0',
+58 verbose headers   connection: 'keep-alive',
+58 verbose headers   'x-served-by': 'cache-dfw1829-DFW',
+58 verbose headers   'x-cache': 'MISS',
+58 verbose headers   'x-cache-hits': '0',
+58 verbose headers   'x-timer': 'S1458759580.995908,VS0,VE94',
+58 verbose headers   vary: 'Accept' }
+59 silly get cb [ 200,
+59 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+59 silly get     etag: '"41HJT57Z8DFTKEDIQG7PLXN78"',
+59 silly get     'content-type': 'application/json',
+59 silly get     'cache-control': 'max-age=300',
+59 silly get     'content-length': '25392',
+59 silly get     'accept-ranges': 'bytes',
+59 silly get     date: 'Wed, 23 Mar 2016 18:59:41 GMT',
+59 silly get     via: '1.1 varnish',
+59 silly get     age: '0',
+59 silly get     connection: 'keep-alive',
+59 silly get     'x-served-by': 'cache-dfw1829-DFW',
+59 silly get     'x-cache': 'MISS',
+59 silly get     'x-cache-hits': '0',
+59 silly get     'x-timer': 'S1458759580.995908,VS0,VE94',
+59 silly get     vary: 'Accept' } ]
+60 verbose get saving mongoose-unique-validator to /Users/Edward/.npm/registry.npmjs.org/mongoose-unique-validator/.cache.json
+61 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+62 silly addNameTag next cb for mongoose-unique-validator with tag latest
+63 silly addNamed mongoose-unique-validator@1.0.2
+64 verbose addNamed "1.0.2" is a plain semver version for mongoose-unique-validator
+65 silly mapToRegistry name mongoose-unique-validator
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry uri https://registry.npmjs.org/mongoose-unique-validator
+69 verbose addRemoteTarball https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz not in flight; adding
+70 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz',
+70 verbose addRemoteTarball   'f12bb892918bd95e19cb62beb3c00b044ab25ea0' ]
+71 info retry fetch attempt 1 at 2:59:40 PM
+72 info attempt registry request try #1 at 2:59:40 PM
+73 http fetch GET https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz
+74 http fetch 200 https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz
+75 silly fetchAndShaCheck shasum f12bb892918bd95e19cb62beb3c00b044ab25ea0
+76 verbose addTmpTarball /var/folders/9n/rw_b7cws4xnd7lckwb972s2c0000gr/T/npm-1804-b1065f16/registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz not in flight; adding
+77 verbose addTmpTarball already have metadata; skipping unpack for mongoose-unique-validator@1.0.2
+78 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+79 silly cache afterAdd mongoose-unique-validator@1.0.2
+80 verbose afterAdd /Users/Edward/.npm/mongoose-unique-validator/1.0.2/package/package.json not in flight; writing
+81 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+82 verbose afterAdd /Users/Edward/.npm/mongoose-unique-validator/1.0.2/package/package.json written
+83 silly install resolved [ { name: 'mongoose-unique-validator',
+83 silly install resolved     version: '1.0.2',
+83 silly install resolved     description: 'mongoose-unique-validator is a plugin which adds pre-save validation for unique fields within a Mongoose schema.',
+83 silly install resolved     main: 'index.js',
+83 silly install resolved     scripts:
+83 silly install resolved      { test: 'mocha test && ./node_modules/eslint/bin/eslint.js index.js test',
+83 silly install resolved        lint: 'eslint index.js test' },
+83 silly install resolved     keywords: [ 'mongoose', 'unique', 'validator' ],
+83 silly install resolved     author:
+83 silly install resolved      { name: 'Blake Haswell',
+83 silly install resolved        email: 'haswell00@gmail.com',
+83 silly install resolved        url: 'http://blakehaswell.com/' },
+83 silly install resolved     contributors: [ [Object] ],
+83 silly install resolved     license: 'MIT',
+83 silly install resolved     repository:
+83 silly install resolved      { type: 'git',
+83 silly install resolved        url: 'git+https://github.com/blakehaswell/mongoose-unique-validator.git' },
+83 silly install resolved     devDependencies:
+83 silly install resolved      { bluebird: '^3.2.2',
+83 silly install resolved        chai: '^3.3.0',
+83 silly install resolved        eslint: '^1.6.0',
+83 silly install resolved        mocha: '^2.3.3' },
+83 silly install resolved     peerDependencies: { mongoose: '^4.2.8' },
+83 silly install resolved     dependencies: { 'lodash.foreach': '^4.1.0', 'lodash.get': '^4.0.2' },
+83 silly install resolved     gitHead: 'b5c675ee82536e1950d31f8c467c0f05853f13f6',
+83 silly install resolved     bugs: { url: 'https://github.com/blakehaswell/mongoose-unique-validator/issues' },
+83 silly install resolved     homepage: 'https://github.com/blakehaswell/mongoose-unique-validator#readme',
+83 silly install resolved     _id: 'mongoose-unique-validator@1.0.2',
+83 silly install resolved     _shasum: 'f12bb892918bd95e19cb62beb3c00b044ab25ea0',
+83 silly install resolved     _from: 'mongoose-unique-validator@latest',
+83 silly install resolved     _npmVersion: '3.3.8',
+83 silly install resolved     _nodeVersion: '4.2.1',
+83 silly install resolved     _npmUser: { name: 'viveleroi', email: 'botsko@gmail.com' },
+83 silly install resolved     dist:
+83 silly install resolved      { shasum: 'f12bb892918bd95e19cb62beb3c00b044ab25ea0',
+83 silly install resolved        tarball: 'http://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz' },
+83 silly install resolved     maintainers: [ [Object], [Object] ],
+83 silly install resolved     _npmOperationalInternal:
+83 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+83 silly install resolved        tmp: 'tmp/mongoose-unique-validator-1.0.2.tgz_1456503405127_0.050946819595992565' },
+83 silly install resolved     directories: {},
+83 silly install resolved     _resolved: 'https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz' } ]
+84 info install mongoose-unique-validator@1.0.2 into /Users/Edward/Desktop/warblock-master
+85 info installOne mongoose-unique-validator@1.0.2
+86 verbose installOne of mongoose-unique-validator to /Users/Edward/Desktop/warblock-master not in flight; installing
+87 verbose correctMkdir /Users/Edward/.npm/_locks correctMkdir not in flight; initializing
+88 verbose lock using /Users/Edward/.npm/_locks/mongoose-unique-validato-7db3165968eb0c9b.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+89 silly install write writing mongoose-unique-validator 1.0.2 to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+90 verbose unbuild node_modules/mongoose-unique-validator
+91 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator is being purged from base /Users/Edward/Desktop/warblock-master
+92 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+93 verbose tar unpack /Users/Edward/.npm/mongoose-unique-validator/1.0.2/package.tgz
+94 verbose tar unpacking to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+95 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator is being purged
+96 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+97 silly gunzTarPerm modes [ '755', '644' ]
+98 silly gunzTarPerm extractEntry package.json
+99 silly gunzTarPerm extractEntry .npmignore
+100 silly gunzTarPerm extractEntry README.md
+101 silly gunzTarPerm extractEntry index.js
+102 silly gunzTarPerm extractEntry CONTRIBUTING.md
+103 silly gunzTarPerm extractEntry CHANGELOG.md
+104 silly gunzTarPerm extractEntry .eslintrc
+105 silly gunzTarPerm extractEntry .editorconfig
+106 silly gunzTarPerm extractEntry .travis.yml
+107 silly gunzTarPerm extractEntry test/helpers.js
+108 silly gunzTarPerm extractEntry test/index.spec.js
+109 silly gunzTarPerm extractEntry test/tests/messages.spec.js
+110 silly gunzTarPerm extractEntry test/tests/validation.spec.js
+111 verbose write writing to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/package.json
+112 info preinstall mongoose-unique-validator@1.0.2
+113 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/package.json
+114 silly prepareForInstallMany adding lodash.foreach@^4.1.0 from mongoose-unique-validator dependencies
+115 silly prepareForInstallMany adding lodash.get@^4.0.2 from mongoose-unique-validator dependencies
+116 silly prepareForInstallMany adding mongoose@^4.2.8 from mongoose-unique-validator peerDependencies
+117 warn peerDependencies The peer dependency mongoose@^4.2.8 included from mongoose-unique-validator will no
+118 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+119 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+120 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/package.json
+121 silly cache add args [ 'lodash.get@^4.0.2', null ]
+122 verbose cache add spec lodash.get@^4.0.2
+123 silly cache add parsed spec Result {
+123 silly cache add   raw: 'lodash.get@^4.0.2',
+123 silly cache add   scope: null,
+123 silly cache add   name: 'lodash.get',
+123 silly cache add   rawSpec: '^4.0.2',
+123 silly cache add   spec: '>=4.0.2 <5.0.0',
+123 silly cache add   type: 'range' }
+124 silly addNamed lodash.get@>=4.0.2 <5.0.0
+125 verbose addNamed ">=4.0.2 <5.0.0" is a valid semver range for lodash.get
+126 silly addNameRange { name: 'lodash.get', range: '>=4.0.2 <5.0.0', hasData: false }
+127 silly mapToRegistry name lodash.get
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry uri https://registry.npmjs.org/lodash.get
+131 verbose addNameRange registry:https://registry.npmjs.org/lodash.get not in flight; fetching
+132 silly cache add args [ 'lodash.foreach@^4.1.0', null ]
+133 verbose cache add spec lodash.foreach@^4.1.0
+134 silly cache add parsed spec Result {
+134 silly cache add   raw: 'lodash.foreach@^4.1.0',
+134 silly cache add   scope: null,
+134 silly cache add   name: 'lodash.foreach',
+134 silly cache add   rawSpec: '^4.1.0',
+134 silly cache add   spec: '>=4.1.0 <5.0.0',
+134 silly cache add   type: 'range' }
+135 silly addNamed lodash.foreach@>=4.1.0 <5.0.0
+136 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for lodash.foreach
+137 silly addNameRange { name: 'lodash.foreach',
+137 silly addNameRange   range: '>=4.1.0 <5.0.0',
+137 silly addNameRange   hasData: false }
+138 silly mapToRegistry name lodash.foreach
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry uri https://registry.npmjs.org/lodash.foreach
+142 verbose addNameRange registry:https://registry.npmjs.org/lodash.foreach not in flight; fetching
+143 verbose request uri https://registry.npmjs.org/lodash.get
+144 verbose request no auth needed
+145 info attempt registry request try #1 at 2:59:41 PM
+146 http request GET https://registry.npmjs.org/lodash.get
+147 verbose request uri https://registry.npmjs.org/lodash.foreach
+148 verbose request no auth needed
+149 info attempt registry request try #1 at 2:59:41 PM
+150 http request GET https://registry.npmjs.org/lodash.foreach
+151 http 200 https://registry.npmjs.org/lodash.foreach
+152 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+152 verbose headers   etag: '"2ZO8U9K4CBY3A7XNOSWRQ6QMH"',
+152 verbose headers   'content-type': 'application/json',
+152 verbose headers   'cache-control': 'max-age=300',
+152 verbose headers   'content-length': '22976',
+152 verbose headers   'accept-ranges': 'bytes',
+152 verbose headers   date: 'Wed, 23 Mar 2016 18:59:41 GMT',
+152 verbose headers   via: '1.1 varnish',
+152 verbose headers   age: '56',
+152 verbose headers   connection: 'keep-alive',
+152 verbose headers   'x-served-by': 'cache-dfw1826-DFW',
+152 verbose headers   'x-cache': 'HIT',
+152 verbose headers   'x-cache-hits': '1',
+152 verbose headers   'x-timer': 'S1458759581.839679,VS0,VE0',
+152 verbose headers   vary: 'Accept' }
+153 silly get cb [ 200,
+153 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+153 silly get     etag: '"2ZO8U9K4CBY3A7XNOSWRQ6QMH"',
+153 silly get     'content-type': 'application/json',
+153 silly get     'cache-control': 'max-age=300',
+153 silly get     'content-length': '22976',
+153 silly get     'accept-ranges': 'bytes',
+153 silly get     date: 'Wed, 23 Mar 2016 18:59:41 GMT',
+153 silly get     via: '1.1 varnish',
+153 silly get     age: '56',
+153 silly get     connection: 'keep-alive',
+153 silly get     'x-served-by': 'cache-dfw1826-DFW',
+153 silly get     'x-cache': 'HIT',
+153 silly get     'x-cache-hits': '1',
+153 silly get     'x-timer': 'S1458759581.839679,VS0,VE0',
+153 silly get     vary: 'Accept' } ]
+154 verbose get saving lodash.foreach to /Users/Edward/.npm/registry.npmjs.org/lodash.foreach/.cache.json
+155 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+156 silly addNameRange number 2 { name: 'lodash.foreach',
+156 silly addNameRange   range: '>=4.1.0 <5.0.0',
+156 silly addNameRange   hasData: true }
+157 silly addNameRange versions [ 'lodash.foreach',
+157 silly addNameRange   [ '2.0.0',
+157 silly addNameRange     '2.1.0',
+157 silly addNameRange     '2.2.0',
+157 silly addNameRange     '2.2.1',
+157 silly addNameRange     '2.3.0',
+157 silly addNameRange     '2.4.0',
+157 silly addNameRange     '2.4.1',
+157 silly addNameRange     '3.0.0',
+157 silly addNameRange     '3.0.1',
+157 silly addNameRange     '3.0.2',
+157 silly addNameRange     '3.0.3',
+157 silly addNameRange     '4.0.0',
+157 silly addNameRange     '4.1.0' ] ]
+158 silly addNamed lodash.foreach@4.1.0
+159 verbose addNamed "4.1.0" is a plain semver version for lodash.foreach
+160 silly mapToRegistry name lodash.foreach
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry uri https://registry.npmjs.org/lodash.foreach
+164 verbose addRemoteTarball https://registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz not in flight; adding
+165 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz',
+165 verbose addRemoteTarball   '0343f5c0260e2cabbaf23313fb6ade8f058b24f8' ]
+166 info retry fetch attempt 1 at 2:59:41 PM
+167 info attempt registry request try #1 at 2:59:41 PM
+168 http fetch GET https://registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz
+169 http fetch 200 https://registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz
+170 silly fetchAndShaCheck shasum 0343f5c0260e2cabbaf23313fb6ade8f058b24f8
+171 verbose addTmpTarball /var/folders/9n/rw_b7cws4xnd7lckwb972s2c0000gr/T/npm-1804-b1065f16/registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz not in flight; adding
+172 verbose addTmpTarball already have metadata; skipping unpack for lodash.foreach@4.1.0
+173 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+174 silly cache afterAdd lodash.foreach@4.1.0
+175 verbose afterAdd /Users/Edward/.npm/lodash.foreach/4.1.0/package/package.json not in flight; writing
+176 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+177 verbose afterAdd /Users/Edward/.npm/lodash.foreach/4.1.0/package/package.json written
+178 http 200 https://registry.npmjs.org/lodash.get
+179 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+179 verbose headers   etag: '"2TGJXLJH0645VBUO2PKV64435"',
+179 verbose headers   'content-type': 'application/json',
+179 verbose headers   'cache-control': 'max-age=300',
+179 verbose headers   'content-length': '12450',
+179 verbose headers   'accept-ranges': 'bytes',
+179 verbose headers   date: 'Wed, 23 Mar 2016 18:59:42 GMT',
+179 verbose headers   via: '1.1 varnish',
+179 verbose headers   age: '0',
+179 verbose headers   connection: 'keep-alive',
+179 verbose headers   'x-served-by': 'cache-dfw1844-DFW',
+179 verbose headers   'x-cache': 'HIT',
+179 verbose headers   'x-cache-hits': '1',
+179 verbose headers   'x-timer': 'S1458759581.838819,VS0,VE276',
+179 verbose headers   vary: 'Accept' }
+180 silly get cb [ 200,
+180 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+180 silly get     etag: '"2TGJXLJH0645VBUO2PKV64435"',
+180 silly get     'content-type': 'application/json',
+180 silly get     'cache-control': 'max-age=300',
+180 silly get     'content-length': '12450',
+180 silly get     'accept-ranges': 'bytes',
+180 silly get     date: 'Wed, 23 Mar 2016 18:59:42 GMT',
+180 silly get     via: '1.1 varnish',
+180 silly get     age: '0',
+180 silly get     connection: 'keep-alive',
+180 silly get     'x-served-by': 'cache-dfw1844-DFW',
+180 silly get     'x-cache': 'HIT',
+180 silly get     'x-cache-hits': '1',
+180 silly get     'x-timer': 'S1458759581.838819,VS0,VE276',
+180 silly get     vary: 'Accept' } ]
+181 verbose get saving lodash.get to /Users/Edward/.npm/registry.npmjs.org/lodash.get/.cache.json
+182 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+183 silly addNameRange number 2 { name: 'lodash.get', range: '>=4.0.2 <5.0.0', hasData: true }
+184 silly addNameRange versions [ 'lodash.get',
+184 silly addNameRange   [ '3.7.0', '4.0.0', '4.0.1', '4.0.2', '4.1.0', '4.1.1', '4.1.2' ] ]
+185 silly addNamed lodash.get@4.1.2
+186 verbose addNamed "4.1.2" is a plain semver version for lodash.get
+187 silly mapToRegistry name lodash.get
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry uri https://registry.npmjs.org/lodash.get
+191 verbose addRemoteTarball https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz not in flight; adding
+192 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz',
+192 verbose addRemoteTarball   'e8ae368b95d5bbb6d24aee9651b32d8c552cdd79' ]
+193 info retry fetch attempt 1 at 2:59:41 PM
+194 info attempt registry request try #1 at 2:59:41 PM
+195 http fetch GET https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz
+196 http fetch 200 https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz
+197 silly fetchAndShaCheck shasum e8ae368b95d5bbb6d24aee9651b32d8c552cdd79
+198 verbose addTmpTarball /var/folders/9n/rw_b7cws4xnd7lckwb972s2c0000gr/T/npm-1804-b1065f16/registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz not in flight; adding
+199 verbose addTmpTarball already have metadata; skipping unpack for lodash.get@4.1.2
+200 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+201 silly cache afterAdd lodash.get@4.1.2
+202 verbose afterAdd /Users/Edward/.npm/lodash.get/4.1.2/package/package.json not in flight; writing
+203 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+204 verbose afterAdd /Users/Edward/.npm/lodash.get/4.1.2/package/package.json written
+205 silly install resolved [ { name: 'lodash.foreach',
+205 silly install resolved     version: '4.1.0',
+205 silly install resolved     description: 'The lodash method `_.forEach` exported as a module.',
+205 silly install resolved     homepage: 'https://lodash.com/',
+205 silly install resolved     icon: 'https://lodash.com/icon.svg',
+205 silly install resolved     license: 'MIT',
+205 silly install resolved     keywords: [ 'lodash-modularized', 'foreach' ],
+205 silly install resolved     author:
+205 silly install resolved      { name: 'John-David Dalton',
+205 silly install resolved        email: 'john.david.dalton@gmail.com',
+205 silly install resolved        url: 'http://allyoucanleet.com/' },
+205 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+205 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+205 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+205 silly install resolved     dependencies: { 'lodash._baseeach': '^4.0.0' },
+205 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+205 silly install resolved     _id: 'lodash.foreach@4.1.0',
+205 silly install resolved     _shasum: '0343f5c0260e2cabbaf23313fb6ade8f058b24f8',
+205 silly install resolved     _from: 'lodash.foreach@>=4.1.0 <5.0.0',
+205 silly install resolved     _npmVersion: '2.14.18',
+205 silly install resolved     _nodeVersion: '5.5.0',
+205 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+205 silly install resolved     dist:
+205 silly install resolved      { shasum: '0343f5c0260e2cabbaf23313fb6ade8f058b24f8',
+205 silly install resolved        tarball: 'http://registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz' },
+205 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+205 silly install resolved     _npmOperationalInternal:
+205 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+205 silly install resolved        tmp: 'tmp/lodash.foreach-4.1.0.tgz_1455615255902_0.5659096946474165' },
+205 silly install resolved     directories: {},
+205 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.foreach/-/lodash.foreach-4.1.0.tgz' },
+205 silly install resolved   { name: 'lodash.get',
+205 silly install resolved     version: '4.1.2',
+205 silly install resolved     description: 'The lodash method `_.get` exported as a module.',
+205 silly install resolved     homepage: 'https://lodash.com/',
+205 silly install resolved     icon: 'https://lodash.com/icon.svg',
+205 silly install resolved     license: 'MIT',
+205 silly install resolved     keywords: [ 'lodash-modularized', 'get' ],
+205 silly install resolved     author:
+205 silly install resolved      { name: 'John-David Dalton',
+205 silly install resolved        email: 'john.david.dalton@gmail.com',
+205 silly install resolved        url: 'http://allyoucanleet.com/' },
+205 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+205 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+205 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+205 silly install resolved     dependencies: { 'lodash.tostring': '^4.0.0' },
+205 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+205 silly install resolved     _id: 'lodash.get@4.1.2',
+205 silly install resolved     _shasum: 'e8ae368b95d5bbb6d24aee9651b32d8c552cdd79',
+205 silly install resolved     _from: 'lodash.get@>=4.0.2 <5.0.0',
+205 silly install resolved     _npmVersion: '2.14.18',
+205 silly install resolved     _nodeVersion: '5.5.0',
+205 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+205 silly install resolved     dist:
+205 silly install resolved      { shasum: 'e8ae368b95d5bbb6d24aee9651b32d8c552cdd79',
+205 silly install resolved        tarball: 'http://registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz' },
+205 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+205 silly install resolved     _npmOperationalInternal:
+205 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+205 silly install resolved        tmp: 'tmp/lodash.get-4.1.2.tgz_1455615287803_0.8842703467234969' },
+205 silly install resolved     directories: {},
+205 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.2.tgz' } ]
+206 info install lodash.foreach@4.1.0 into /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+207 info install lodash.get@4.1.2 into /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+208 info installOne lodash.foreach@4.1.0
+209 verbose installOne of lodash.foreach to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator not in flight; installing
+210 verbose correctMkdir /Users/Edward/.npm/_locks correctMkdir not in flight; initializing
+211 info installOne lodash.get@4.1.2
+212 verbose installOne of lodash.get to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator not in flight; installing
+213 verbose correctMkdir /Users/Edward/.npm/_locks correctMkdir not in flight; initializing
+214 verbose lock using /Users/Edward/.npm/_locks/lodash-foreach-ef139e4ded237240.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+215 silly install write writing lodash.foreach 4.1.0 to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+216 verbose lock using /Users/Edward/.npm/_locks/lodash-get-bee7247bcdf8fd30.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+217 silly install write writing lodash.get 4.1.2 to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+218 verbose unbuild node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+219 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach is being purged from base /Users/Edward/Desktop/warblock-master
+220 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+221 verbose tar unpack /Users/Edward/.npm/lodash.foreach/4.1.0/package.tgz
+222 verbose tar unpacking to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+223 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach is being purged
+224 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+225 silly gunzTarPerm modes [ '755', '644' ]
+226 silly gunzTarPerm extractEntry package.json
+227 silly gunzTarPerm extractEntry README.md
+228 silly gunzTarPerm extractEntry LICENSE
+229 silly gunzTarPerm extractEntry index.js
+230 verbose unbuild node_modules/mongoose-unique-validator/node_modules/lodash.get
+231 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get is being purged from base /Users/Edward/Desktop/warblock-master
+232 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+233 verbose tar unpack /Users/Edward/.npm/lodash.get/4.1.2/package.tgz
+234 verbose tar unpacking to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+235 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get is being purged
+236 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+237 silly gunzTarPerm modes [ '755', '644' ]
+238 verbose write writing to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/package.json
+239 silly gunzTarPerm extractEntry package.json
+240 info preinstall lodash.foreach@4.1.0
+241 silly gunzTarPerm extractEntry README.md
+242 silly gunzTarPerm extractEntry LICENSE
+243 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/package.json
+244 silly gunzTarPerm extractEntry index.js
+245 verbose write writing to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/package.json
+246 silly prepareForInstallMany adding lodash._baseeach@^4.0.0 from lodash.foreach dependencies
+247 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/package.json
+248 info preinstall lodash.get@4.1.2
+249 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/package.json
+250 silly cache add args [ 'lodash._baseeach@^4.0.0', null ]
+251 verbose cache add spec lodash._baseeach@^4.0.0
+252 silly cache add parsed spec Result {
+252 silly cache add   raw: 'lodash._baseeach@^4.0.0',
+252 silly cache add   scope: null,
+252 silly cache add   name: 'lodash._baseeach',
+252 silly cache add   rawSpec: '^4.0.0',
+252 silly cache add   spec: '>=4.0.0 <5.0.0',
+252 silly cache add   type: 'range' }
+253 silly addNamed lodash._baseeach@>=4.0.0 <5.0.0
+254 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for lodash._baseeach
+255 silly addNameRange { name: 'lodash._baseeach',
+255 silly addNameRange   range: '>=4.0.0 <5.0.0',
+255 silly addNameRange   hasData: false }
+256 silly mapToRegistry name lodash._baseeach
+257 silly mapToRegistry using default registry
+258 silly mapToRegistry registry https://registry.npmjs.org/
+259 silly mapToRegistry uri https://registry.npmjs.org/lodash._baseeach
+260 verbose addNameRange registry:https://registry.npmjs.org/lodash._baseeach not in flight; fetching
+261 verbose request uri https://registry.npmjs.org/lodash._baseeach
+262 verbose request no auth needed
+263 info attempt registry request try #1 at 2:59:41 PM
+264 http request GET https://registry.npmjs.org/lodash._baseeach
+265 silly prepareForInstallMany adding lodash.tostring@^4.0.0 from lodash.get dependencies
+266 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/package.json
+267 silly cache add args [ 'lodash.tostring@^4.0.0', null ]
+268 verbose cache add spec lodash.tostring@^4.0.0
+269 silly cache add parsed spec Result {
+269 silly cache add   raw: 'lodash.tostring@^4.0.0',
+269 silly cache add   scope: null,
+269 silly cache add   name: 'lodash.tostring',
+269 silly cache add   rawSpec: '^4.0.0',
+269 silly cache add   spec: '>=4.0.0 <5.0.0',
+269 silly cache add   type: 'range' }
+270 silly addNamed lodash.tostring@>=4.0.0 <5.0.0
+271 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for lodash.tostring
+272 silly addNameRange { name: 'lodash.tostring',
+272 silly addNameRange   range: '>=4.0.0 <5.0.0',
+272 silly addNameRange   hasData: false }
+273 silly mapToRegistry name lodash.tostring
+274 silly mapToRegistry using default registry
+275 silly mapToRegistry registry https://registry.npmjs.org/
+276 silly mapToRegistry uri https://registry.npmjs.org/lodash.tostring
+277 verbose addNameRange registry:https://registry.npmjs.org/lodash.tostring not in flight; fetching
+278 verbose request uri https://registry.npmjs.org/lodash.tostring
+279 verbose request no auth needed
+280 info attempt registry request try #1 at 2:59:42 PM
+281 http request GET https://registry.npmjs.org/lodash.tostring
+282 http 200 https://registry.npmjs.org/lodash.tostring
+283 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+283 verbose headers   etag: '"8MUEF6ZAR1Q1RVZPJBD3Q6LLT"',
+283 verbose headers   'content-type': 'application/json',
+283 verbose headers   'cache-control': 'max-age=300',
+283 verbose headers   'content-length': '10981',
+283 verbose headers   'accept-ranges': 'bytes',
+283 verbose headers   date: 'Wed, 23 Mar 2016 18:59:42 GMT',
+283 verbose headers   via: '1.1 varnish',
+283 verbose headers   age: '41',
+283 verbose headers   connection: 'keep-alive',
+283 verbose headers   'x-served-by': 'cache-dfw1840-DFW',
+283 verbose headers   'x-cache': 'HIT',
+283 verbose headers   'x-cache-hits': '2',
+283 verbose headers   'x-timer': 'S1458759582.616634,VS0,VE0',
+283 verbose headers   vary: 'Accept' }
+284 silly get cb [ 200,
+284 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+284 silly get     etag: '"8MUEF6ZAR1Q1RVZPJBD3Q6LLT"',
+284 silly get     'content-type': 'application/json',
+284 silly get     'cache-control': 'max-age=300',
+284 silly get     'content-length': '10981',
+284 silly get     'accept-ranges': 'bytes',
+284 silly get     date: 'Wed, 23 Mar 2016 18:59:42 GMT',
+284 silly get     via: '1.1 varnish',
+284 silly get     age: '41',
+284 silly get     connection: 'keep-alive',
+284 silly get     'x-served-by': 'cache-dfw1840-DFW',
+284 silly get     'x-cache': 'HIT',
+284 silly get     'x-cache-hits': '2',
+284 silly get     'x-timer': 'S1458759582.616634,VS0,VE0',
+284 silly get     vary: 'Accept' } ]
+285 verbose get saving lodash.tostring to /Users/Edward/.npm/registry.npmjs.org/lodash.tostring/.cache.json
+286 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+287 silly addNameRange number 2 { name: 'lodash.tostring',
+287 silly addNameRange   range: '>=4.0.0 <5.0.0',
+287 silly addNameRange   hasData: true }
+288 silly addNameRange versions [ 'lodash.tostring',
+288 silly addNameRange   [ '4.0.0', '4.0.1', '4.0.2', '4.1.0', '4.1.1', '4.1.2' ] ]
+289 silly addNamed lodash.tostring@4.1.2
+290 verbose addNamed "4.1.2" is a plain semver version for lodash.tostring
+291 silly mapToRegistry name lodash.tostring
+292 silly mapToRegistry using default registry
+293 silly mapToRegistry registry https://registry.npmjs.org/
+294 silly mapToRegistry uri https://registry.npmjs.org/lodash.tostring
+295 verbose addRemoteTarball https://registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz not in flight; adding
+296 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz',
+296 verbose addRemoteTarball   '7d326a5cf64da4298f2fd35b688d848267535288' ]
+297 info retry fetch attempt 1 at 2:59:42 PM
+298 info attempt registry request try #1 at 2:59:42 PM
+299 http fetch GET https://registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz
+300 http 200 https://registry.npmjs.org/lodash._baseeach
+301 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+301 verbose headers   etag: '"5IBWOJ5SOOVJ9BPE59N6O6HSQ"',
+301 verbose headers   'content-type': 'application/json',
+301 verbose headers   'cache-control': 'max-age=300',
+301 verbose headers   'content-length': '17882',
+301 verbose headers   'accept-ranges': 'bytes',
+301 verbose headers   date: 'Wed, 23 Mar 2016 18:59:42 GMT',
+301 verbose headers   via: '1.1 varnish',
+301 verbose headers   age: '206',
+301 verbose headers   connection: 'keep-alive',
+301 verbose headers   'x-served-by': 'cache-dfw1827-DFW',
+301 verbose headers   'x-cache': 'HIT',
+301 verbose headers   'x-cache-hits': '1',
+301 verbose headers   'x-timer': 'S1458759582.598712,VS0,VE0',
+301 verbose headers   vary: 'Accept' }
+302 silly get cb [ 200,
+302 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+302 silly get     etag: '"5IBWOJ5SOOVJ9BPE59N6O6HSQ"',
+302 silly get     'content-type': 'application/json',
+302 silly get     'cache-control': 'max-age=300',
+302 silly get     'content-length': '17882',
+302 silly get     'accept-ranges': 'bytes',
+302 silly get     date: 'Wed, 23 Mar 2016 18:59:42 GMT',
+302 silly get     via: '1.1 varnish',
+302 silly get     age: '206',
+302 silly get     connection: 'keep-alive',
+302 silly get     'x-served-by': 'cache-dfw1827-DFW',
+302 silly get     'x-cache': 'HIT',
+302 silly get     'x-cache-hits': '1',
+302 silly get     'x-timer': 'S1458759582.598712,VS0,VE0',
+302 silly get     vary: 'Accept' } ]
+303 verbose get saving lodash._baseeach to /Users/Edward/.npm/registry.npmjs.org/lodash._baseeach/.cache.json
+304 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+305 silly addNameRange number 2 { name: 'lodash._baseeach',
+305 silly addNameRange   range: '>=4.0.0 <5.0.0',
+305 silly addNameRange   hasData: true }
+306 silly addNameRange versions [ 'lodash._baseeach',
+306 silly addNameRange   [ '3.0.0',
+306 silly addNameRange     '3.0.1',
+306 silly addNameRange     '3.0.2',
+306 silly addNameRange     '3.0.3',
+306 silly addNameRange     '3.0.4',
+306 silly addNameRange     '4.0.0',
+306 silly addNameRange     '4.0.1',
+306 silly addNameRange     '4.0.2',
+306 silly addNameRange     '4.1.0',
+306 silly addNameRange     '4.1.1' ] ]
+307 silly addNamed lodash._baseeach@4.1.1
+308 verbose addNamed "4.1.1" is a plain semver version for lodash._baseeach
+309 silly mapToRegistry name lodash._baseeach
+310 silly mapToRegistry using default registry
+311 silly mapToRegistry registry https://registry.npmjs.org/
+312 silly mapToRegistry uri https://registry.npmjs.org/lodash._baseeach
+313 verbose addRemoteTarball https://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz not in flight; adding
+314 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz',
+314 verbose addRemoteTarball   'c8f334a88b83d85fb7b91ea3ac0644148d144fb9' ]
+315 info retry fetch attempt 1 at 2:59:42 PM
+316 info attempt registry request try #1 at 2:59:42 PM
+317 http fetch GET https://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz
+318 http fetch 200 https://registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz
+319 silly fetchAndShaCheck shasum 7d326a5cf64da4298f2fd35b688d848267535288
+320 verbose addTmpTarball /var/folders/9n/rw_b7cws4xnd7lckwb972s2c0000gr/T/npm-1804-b1065f16/registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz not in flight; adding
+321 verbose addTmpTarball already have metadata; skipping unpack for lodash.tostring@4.1.2
+322 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+323 silly cache afterAdd lodash.tostring@4.1.2
+324 verbose afterAdd /Users/Edward/.npm/lodash.tostring/4.1.2/package/package.json not in flight; writing
+325 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+326 verbose afterAdd /Users/Edward/.npm/lodash.tostring/4.1.2/package/package.json written
+327 silly install resolved [ { name: 'lodash.tostring',
+327 silly install resolved     version: '4.1.2',
+327 silly install resolved     description: 'The lodash method `_.toString` exported as a module.',
+327 silly install resolved     homepage: 'https://lodash.com/',
+327 silly install resolved     icon: 'https://lodash.com/icon.svg',
+327 silly install resolved     license: 'MIT',
+327 silly install resolved     keywords: [ 'lodash-modularized', 'tostring' ],
+327 silly install resolved     author:
+327 silly install resolved      { name: 'John-David Dalton',
+327 silly install resolved        email: 'john.david.dalton@gmail.com',
+327 silly install resolved        url: 'http://allyoucanleet.com/' },
+327 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+327 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+327 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+327 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+327 silly install resolved     _id: 'lodash.tostring@4.1.2',
+327 silly install resolved     _shasum: '7d326a5cf64da4298f2fd35b688d848267535288',
+327 silly install resolved     _from: 'lodash.tostring@>=4.0.0 <5.0.0',
+327 silly install resolved     _npmVersion: '2.14.17',
+327 silly install resolved     _nodeVersion: '5.5.0',
+327 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+327 silly install resolved     dist:
+327 silly install resolved      { shasum: '7d326a5cf64da4298f2fd35b688d848267535288',
+327 silly install resolved        tarball: 'http://registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz' },
+327 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+327 silly install resolved     _npmOperationalInternal:
+327 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+327 silly install resolved        tmp: 'tmp/lodash.tostring-4.1.2.tgz_1456896853027_0.8195764778647572' },
+327 silly install resolved     directories: {},
+327 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.tostring/-/lodash.tostring-4.1.2.tgz' } ]
+328 info install lodash.tostring@4.1.2 into /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+329 info installOne lodash.tostring@4.1.2
+330 verbose installOne of lodash.tostring to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get not in flight; installing
+331 verbose correctMkdir /Users/Edward/.npm/_locks correctMkdir not in flight; initializing
+332 verbose lock using /Users/Edward/.npm/_locks/lodash-tostring-198eda3f10611c4a.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+333 silly install write writing lodash.tostring 4.1.2 to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+334 verbose unbuild node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+335 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring is being purged from base /Users/Edward/Desktop/warblock-master
+336 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+337 verbose tar unpack /Users/Edward/.npm/lodash.tostring/4.1.2/package.tgz
+338 verbose tar unpacking to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+339 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring is being purged
+340 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+341 silly gunzTarPerm modes [ '755', '644' ]
+342 silly gunzTarPerm extractEntry package.json
+343 silly gunzTarPerm extractEntry README.md
+344 silly gunzTarPerm extractEntry LICENSE
+345 silly gunzTarPerm extractEntry index.js
+346 http fetch 200 https://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz
+347 silly fetchAndShaCheck shasum c8f334a88b83d85fb7b91ea3ac0644148d144fb9
+348 verbose addTmpTarball /var/folders/9n/rw_b7cws4xnd7lckwb972s2c0000gr/T/npm-1804-b1065f16/registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz not in flight; adding
+349 verbose addTmpTarball already have metadata; skipping unpack for lodash._baseeach@4.1.1
+350 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+351 verbose write writing to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring/package.json
+352 info preinstall lodash.tostring@4.1.2
+353 silly cache afterAdd lodash._baseeach@4.1.1
+354 verbose afterAdd /Users/Edward/.npm/lodash._baseeach/4.1.1/package/package.json not in flight; writing
+355 verbose correctMkdir /Users/Edward/.npm correctMkdir not in flight; initializing
+356 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring/package.json
+357 verbose afterAdd /Users/Edward/.npm/lodash._baseeach/4.1.1/package/package.json written
+358 silly install resolved [ { name: 'lodash._baseeach',
+358 silly install resolved     version: '4.1.1',
+358 silly install resolved     description: 'The internal lodash function `baseEach` exported as a module.',
+358 silly install resolved     homepage: 'https://lodash.com/',
+358 silly install resolved     icon: 'https://lodash.com/icon.svg',
+358 silly install resolved     license: 'MIT',
+358 silly install resolved     author:
+358 silly install resolved      { name: 'John-David Dalton',
+358 silly install resolved        email: 'john.david.dalton@gmail.com',
+358 silly install resolved        url: 'http://allyoucanleet.com/' },
+358 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+358 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+358 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+358 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+358 silly install resolved     _id: 'lodash._baseeach@4.1.1',
+358 silly install resolved     _shasum: 'c8f334a88b83d85fb7b91ea3ac0644148d144fb9',
+358 silly install resolved     _from: 'lodash._baseeach@>=4.0.0 <5.0.0',
+358 silly install resolved     _npmVersion: '2.14.17',
+358 silly install resolved     _nodeVersion: '5.5.0',
+358 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+358 silly install resolved     dist:
+358 silly install resolved      { shasum: 'c8f334a88b83d85fb7b91ea3ac0644148d144fb9',
+358 silly install resolved        tarball: 'http://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz' },
+358 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+358 silly install resolved     _npmOperationalInternal:
+358 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+358 silly install resolved        tmp: 'tmp/lodash._baseeach-4.1.1.tgz_1456896411947_0.5532419343944639' },
+358 silly install resolved     directories: {},
+358 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-4.1.1.tgz' } ]
+359 info install lodash._baseeach@4.1.1 into /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+360 info installOne lodash._baseeach@4.1.1
+361 verbose installOne of lodash._baseeach to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach not in flight; installing
+362 verbose correctMkdir /Users/Edward/.npm/_locks correctMkdir not in flight; initializing
+363 verbose lock using /Users/Edward/.npm/_locks/lodash-baseeach-87c4714b2fe5fed1.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+364 silly install write writing lodash._baseeach 4.1.1 to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+365 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring/package.json
+366 verbose unbuild node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+367 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach is being purged from base /Users/Edward/Desktop/warblock-master
+368 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+369 verbose tar unpack /Users/Edward/.npm/lodash._baseeach/4.1.1/package.tgz
+370 verbose tar unpacking to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+371 silly gentlyRm /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach is being purged
+372 verbose gentlyRm don't care about contents; nuking /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+373 silly gunzTarPerm modes [ '755', '644' ]
+374 silly install resolved []
+375 verbose about to build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+376 info build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+377 silly gunzTarPerm extractEntry package.json
+378 silly gunzTarPerm extractEntry README.md
+379 silly gunzTarPerm extractEntry LICENSE
+380 info linkStuff lodash.tostring@4.1.2
+381 silly linkStuff lodash.tostring@4.1.2 has /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules as its parent node_modules
+382 silly gunzTarPerm extractEntry index.js
+383 verbose linkBins lodash.tostring@4.1.2
+384 verbose linkMans lodash.tostring@4.1.2
+385 verbose rebuildBundles lodash.tostring@4.1.2
+386 info install lodash.tostring@4.1.2
+387 info postinstall lodash.tostring@4.1.2
+388 verbose unlock done using /Users/Edward/.npm/_locks/lodash-tostring-198eda3f10611c4a.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash.tostring
+389 verbose about to build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+390 info build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+391 info linkStuff lodash.get@4.1.2
+392 silly linkStuff lodash.get@4.1.2 has /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules as its parent node_modules
+393 verbose linkBins lodash.get@4.1.2
+394 verbose linkMans lodash.get@4.1.2
+395 verbose rebuildBundles lodash.get@4.1.2
+396 verbose rebuildBundles [ 'lodash.tostring' ]
+397 info install lodash.get@4.1.2
+398 info postinstall lodash.get@4.1.2
+399 verbose write writing to /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach/package.json
+400 verbose unlock done using /Users/Edward/.npm/_locks/lodash-get-bee7247bcdf8fd30.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.get
+401 info preinstall lodash._baseeach@4.1.1
+402 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach/package.json
+403 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach/package.json
+404 silly install resolved []
+405 verbose about to build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+406 info build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+407 info linkStuff lodash._baseeach@4.1.1
+408 silly linkStuff lodash._baseeach@4.1.1 has /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules as its parent node_modules
+409 verbose linkBins lodash._baseeach@4.1.1
+410 verbose linkMans lodash._baseeach@4.1.1
+411 verbose rebuildBundles lodash._baseeach@4.1.1
+412 info install lodash._baseeach@4.1.1
+413 info postinstall lodash._baseeach@4.1.1
+414 verbose unlock done using /Users/Edward/.npm/_locks/lodash-baseeach-87c4714b2fe5fed1.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach/node_modules/lodash._baseeach
+415 verbose about to build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+416 info build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+417 info linkStuff lodash.foreach@4.1.0
+418 silly linkStuff lodash.foreach@4.1.0 has /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules as its parent node_modules
+419 verbose linkBins lodash.foreach@4.1.0
+420 verbose linkMans lodash.foreach@4.1.0
+421 verbose rebuildBundles lodash.foreach@4.1.0
+422 verbose rebuildBundles [ 'lodash._baseeach' ]
+423 info install lodash.foreach@4.1.0
+424 info postinstall lodash.foreach@4.1.0
+425 verbose unlock done using /Users/Edward/.npm/_locks/lodash-foreach-ef139e4ded237240.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/node_modules/lodash.foreach
+426 verbose about to build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+427 info build /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+428 info linkStuff mongoose-unique-validator@1.0.2
+429 silly linkStuff mongoose-unique-validator@1.0.2 has /Users/Edward/Desktop/warblock-master/node_modules as its parent node_modules
+430 verbose linkBins mongoose-unique-validator@1.0.2
+431 verbose linkMans mongoose-unique-validator@1.0.2
+432 verbose rebuildBundles mongoose-unique-validator@1.0.2
+433 verbose rebuildBundles [ 'lodash.foreach', 'lodash.get' ]
+434 info install mongoose-unique-validator@1.0.2
+435 info postinstall mongoose-unique-validator@1.0.2
+436 verbose readDependencies loading dependencies from /Users/Edward/Desktop/warblock-master/package.json
+437 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/bcrypt-nodejs/package.json
+438 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/body-parser/package.json
+439 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/clone/package.json
+440 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/connect-flash/package.json
+441 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/cookie-parser/package.json
+442 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/ejs/package.json
+443 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/express/package.json
+444 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/express-session/package.json
+445 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/install/package.json
+446 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/method-override/package.json
+447 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/mongodb/package.json
+448 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/mongojs/package.json
+449 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/mongoose/package.json
+450 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-auto-increment/package.json
+451 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator/package.json
+452 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/morgan/package.json
+453 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/npm/package.json
+454 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/passport/package.json
+455 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-facebook/package.json
+456 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-google-oauth/package.json
+457 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-local/package.json
+458 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/passport-twitter/package.json
+459 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/socket.io/package.json
+460 verbose targetResolver reading package data from /Users/Edward/Desktop/warblock-master/node_modules/.bin/npm/package.json
+461 verbose already installed skipping mongoose@^4.2.8 /Users/Edward/Desktop/warblock-master
+462 silly install resolved []
+463 verbose unlock done using /Users/Edward/.npm/_locks/mongoose-unique-validato-7db3165968eb0c9b.lock for /Users/Edward/Desktop/warblock-master/node_modules/mongoose-unique-validator
+464 verbose validateInstall loading /Users/Edward/Desktop/warblock-master/package.json for validation
+465 verbose stack Error: The package mongoose@3.8.39 does not satisfy its siblings' peerDependencies requirements!
+465 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+465 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+465 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+465 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+465 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+465 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+465 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+465 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+465 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+465 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+466 verbose cwd /Users/Edward/Desktop/warblock-master
+467 error Darwin 14.3.0
+468 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mongoose-unique-validator"
+469 error node v4.4.0
+470 error npm  v2.14.20
+471 error code EPEERINVALID
+472 error peerinvalid The package mongoose@3.8.39 does not satisfy its siblings' peerDependencies requirements!
+472 error peerinvalid Peer mongoose-auto-increment@5.0.1 wants mongoose@^4.1.12
+472 error peerinvalid Peer mongoose-unique-validator@1.0.2 wants mongoose@^4.2.8
+473 verbose exit [ 1, true ]

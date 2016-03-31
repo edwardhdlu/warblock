@@ -44,7 +44,7 @@ module.exports = function(app, passport) {
     app.get('/update', isLoggedIn, function(req, res) {
         res.render('update.ejs', {
             user : req.user, 
-            message: req.flash('signupMessage')
+            message: ''
         });
     });
 
@@ -52,13 +52,40 @@ module.exports = function(app, passport) {
         var id = req.params.id;
         var new_name = req.body.new_name;
 
-        User.findByIdAndUpdate({ _id: id }, { username: new_name }, function(error, user) {
-            if (error)
-                res.send('Something broke!');
 
-            console.log("Updateing username of " + id + " to " + new_name);
-            res.redirect('/');
-        });
+        if (!alphanumeric(new_name)) {
+            res.render('update.ejs', {
+                user: req.user,
+                message: 'Username can only contain letters and numbers.'
+            });
+        }
+        else if (new_name.length < 3 || new_name.length > 15) {
+            if (new_name.length < 3) {
+                msg = 'Username must be at least 3 characters.';
+            }
+            else {
+                msg = 'Username cannot exceed 15 characters.';
+            }
+
+            res.render('update.ejs', {
+                user: req.user,
+                message: msg
+            });
+        }
+        else {
+            User.findByIdAndUpdate({ _id: id }, { username: new_name }, function(err, user) {
+                if (err) {
+                    res.render('update.ejs', {
+                        user: req.user,
+                        message: 'Username already taken'
+                    });
+                }
+                else {
+                    console.log("Updating username of " + id + " to " + new_name);
+                    res.redirect('/');
+                }
+            });
+        }
     });
 
 
@@ -77,12 +104,18 @@ module.exports = function(app, passport) {
         failureFlash : true // allow flash messages
     }));
 
-    // process the login form
-    app.post('/login', passport.authenticate('local-login', {
-        successRedirect : '/', // redirect to the secure profile section
-        failureRedirect : '/login', // redirect back to the signup page if there is an error
-        failureFlash : true // allow flash messages
-    }));
+    app.post('/login', passport.authenticate('local-login', { 
+        failureRedirect: '/login', 
+        failureFlash: true }),
+
+        function(req, res) {
+            res.redirect('/');
+            var cur_user = { uid: req.user.uid, username: req.user.username, socket_id: 1337 };
+            ONLINE_USERS.push(cur_user);
+            console.log("Currently online: " + ONLINE_USERS);
+    });
+
+
 };
 
 // route middleware to make sure a user is logged in
@@ -95,3 +128,14 @@ function isLoggedIn(req, res, next) {
     // if they aren't redirect them to the home page
     res.redirect('/login');
 }
+
+function alphanumeric(txt) {  
+    var letterNumber = /^[0-9a-zA-Z]+$/;  
+
+    if(txt.match(letterNumber)) {  
+        return true;  
+    }  
+    else {   
+        return false;   
+    }  
+}  

@@ -6,6 +6,8 @@ var io = require('socket.io')(http);
 var clone = require('clone');
 var clients = {};
 
+ONLINE_USERS = [];
+
 // REQS FOR USER AUTH
 var passport = require('passport');
 var flash    = require('connect-flash');
@@ -271,7 +273,7 @@ app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
-require('./public/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./public/routes.js')(app, passport, io); // load our routes and pass in our app and fully configured passport
 
 http.listen(3000, function(){
     console.log('listening on *:3000');
