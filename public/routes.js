@@ -41,12 +41,20 @@ module.exports = function(app, passport) {
     // =====================================
     // we will want this protected so you have to be logged in to visit
     // we will use route middleware to verify this (the isLoggedIn function)
+    app.get('/profile', isLoggedIn, function(req, res) {
+        res.render('profile.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+
     app.get('/update', isLoggedIn, function(req, res) {
         res.render('update.ejs', {
             user : req.user, 
             message: ''
         });
     });
+
+
 
     app.post('/update/:id', isLoggedIn, function(req, res) {
         var id = req.params.id;
@@ -114,6 +122,20 @@ module.exports = function(app, passport) {
             ONLINE_USERS.push(cur_user);
             console.log("Currently online: " + ONLINE_USERS);
     });
+
+    // =====================================
+    // FACEBOOK ROUTES =====================
+    // =====================================
+    // route for facebook authentication and login
+    app.get('/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
+
+    // handle the callback after facebook has authenticated the user
+    app.get('/auth/facebook/callback',
+        passport.authenticate('facebook', {
+            successRedirect : '/',
+            failureRedirect : '/'
+        }));
+
 
 
 };

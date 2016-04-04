@@ -11,12 +11,16 @@
 
             <div id="menu">
                 <% if (locals.user) { %>
+                        <% if (user.facebook.email) { %>
+                            <strong>Email: </strong><%= user.facebook.email %>
+                        <% } %>
                     <strong>Signed in as: </strong><%= user.username %> 
                     <a href="/update" class="btn btn-default"><span class="fa fa-user"></span>Profile</a>
                     <a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>Logout</a>
                 <% } else { %>
-                <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Login</a>
-                <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Signup</a>
+                <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span>Facebook</a>
+                <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+                <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
                 <% } %>
             </div>
     	</div>
