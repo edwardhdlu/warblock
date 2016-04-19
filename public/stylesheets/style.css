@@ -133,3 +133,7 @@ canvas {
 	text-decoration: none;
 	padding: 10px;
 }
+
+#uid {
+	display: none;
+}

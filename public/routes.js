@@ -118,9 +118,9 @@ module.exports = function(app, passport) {
 
         function(req, res) {
             res.redirect('/');
-            var cur_user = { uid: req.user.uid, username: req.user.username, socket_id: 1337 };
-            ONLINE_USERS.push(cur_user);
-            console.log("Currently online: " + ONLINE_USERS);
+            //var cur_user = { uid: req.user.uid, username: req.user.username, socket_id: -1 };
+            //ONLINE_USERS.push(cur_user);
+            //console.log("Currently online: " + ONLINE_USERS.username );
     });
 
     // =====================================

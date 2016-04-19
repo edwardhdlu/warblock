@@ -11,20 +11,17 @@
 
             <div id="menu">
                 <% if (locals.user) { %>
-                        <% if (user.facebook.email) { %>
-                            <strong>Email: </strong><%= user.facebook.email %>
-                        <% } %>
-                        <% if (user.google.email) { %>
-                            <strong>Email: </strong><%= user.google.email %>
-                        <% } %>
+                    <div id="uid"><%= user.id%></div>
+
                     <strong>Signed in as: </strong><%= user.username %> 
                     <a href="/update" class="btn btn-default"><span class="fa fa-user"></span>Profile</a>
                     <a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>Logout</a>
                 <% } else { %>
-                <a href="/auth/google" class="btn btn-primary"><span class="fa fa-google">Google</span>
-                <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span>Facebook</a>
-                <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-                <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+                    <div id="uid"></div>
+                    <a href="/auth/google" class="btn btn-primary"><span class="fa fa-google">Google</span>
+                    <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span>Facebook</a>
+                    <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+                    <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
                 <% } %>
             </div>
     	</div>
@@ -51,6 +48,9 @@
         <script>
             var socket = io();
             
+            var uid = document.getElementById('uid').innerHTML;
+            socket.emit('newuser', uid);
+
             $('#input').keypress(function(e) {
                 if (e.which == 13) { //Enter
                     var value = $('#input').val();
@@ -59,6 +59,15 @@
                     $('#input').val("");
                     socket.emit('command', value);
                 }
+            });
+
+            socket.on('game render', function(map) {
+                draw.init(map);
+                document.getElementById("log").value += "> " + "Welcome back.\n";
+                if(map.yourTurn) document.getElementById("log").value += ("> " + "It's your turn, enter a command.\n");
+                else document.getElementById("log").value += ("> " + "Please wait, your opponent is selecting a move...\n");
+                
+                $('#log').scrollTop($('#log')[0].scrollHeight);
             });
             
             socket.on('game init', function(map){
